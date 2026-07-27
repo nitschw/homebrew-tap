@@ -18,6 +18,8 @@ cask "aerospace-panewright" do
     "nikitabobko/tap/aerospace-dev",
   ]
 
+  deprecate! date: "2026-07-27", because: "the tiling engine now ships inside the Panewright app itself"
+
   depends_on macos: :ventura
 
   app "AeroSpace-v#{version.sub(/-pw\.\d+$/, "")}/AeroSpace.app"
